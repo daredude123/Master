@@ -1,0 +1,183 @@
+use strict;
+use warnings;
+use WordNet::QueryData;
+use Lingua::EN::Tagger;
+use WordNet::Similarity::lesk;
+
+require "Util/ReturnSenses.pl";
+
+sub manualDisambiguationV2;
+sub FindOneValidForm;
+sub SynonymSetCheck;
+sub addPointsFromHashToHash;
+sub TargetWordAndContextDisambiguation;
+sub findTargetWordPos;
+
+my $wn = WordNet::QueryData->new(
+  dir     => "D:/Perl/wn3.1.dict.tar/wn3.1.dict/dict",
+  verbose => 0,
+  noload  => 0
+  );
+
+my $fileName = 'D:/SKOLE/MASTER 2016/testing/100URL-target-context.txt';
+
+
+#####End TargetWordAndContextDisambiguation
+
+sub readFile {
+  open(my $fh, '<:encoding(UTF-8)',)
+  or die "Could not read file $fileName\n";
+  while(my $row = <$fh>){
+    my ($url,$target,$context) = split /\|/, $row;
+
+    my $p = new Lingua::EN::Tagger;
+
+    my ($HeadLine,$targetWord) = AskForContext->AskForContext;
+
+    my @inTextPOSContextArray = split / /, lc  $p->get_readable($context);
+    my $inTextPOSContext = lc $p->get_readable($context);
+    my @inTextArray = split / /, lc $context;
+
+    my @HeadLinePOSContextArray = split / /, lc  $p->get_readable($HeadLine);
+    my $HeadLinePOSContext = lc $p->get_readable($HeadLine);
+    my @HeadLineArray = split / /, lc $HeadLine;
+
+    my %valueHash = ();
+    my %valueHash1 = ();
+    my $measure = WordNet::Similarity::lesk->new($wn);
+
+    my $targetPartOfSpeech = findTargetWordPos($targetWord, $inTextPOSContext);
+my $multiplier = 1;#SynonymSetCheck($targetWord,@HeadLineArray);
+
+#####These commented ones are the acumulated score when running against the HeadLine aswell
+%valueHash = TargetWordAndContextDisambiguation($targetWord,@HeadLinePOSContextArray);
+$multiplier = 1;
+%valueHash1 = TargetWordAndContextDisambiguation($targetWord,@inTextPOSContextArray);
+print "URL= $url\nTarget: $target\nContext: $context\n";
+chomp $row;
+
+        # print "$row\n";
+      }
+      close $fh;
+    }
+
+    sub writeToFile{
+      my ($result) = @_;
+      print "@_";
+      print join 'hello',@_;
+    # my $dir = dir();
+    # my $file = $dir->file("Disambiguate_report.txt"); # /tmp/file.txt
+
+    # Get a file_handle (IO::File object) you can write to
+    # my $file_handle = $file->openw();
+    # $file_handle->print($result);
+    open (my $fr, '>', ) or die "Could not open $writeFile";
+    print $fr $result; 
+    close $fr;
+  }
+
+  foreach my $y (
+    sort { $valueHash{$a} <=> $valueHash{$b} }
+    keys %valueHash
+    )
+  {
+    print $y, " -- ", "value : ", $valueHash{$y}, "\n";
+    print "########DEF########\n";
+    print $wn->querySense( $y, "glos" ), "\n---\n";
+    print "Synset: ", join(", ", $wn->querySense($y, "syns")), "\n";
+    print "###################\n";
+  }
+# process
+
+sub TargetWordAndContextDisambiguation{
+  my ($tWord, $cont) = @_;
+  my %subValueHash = ();
+  print "ACCESSING glossaryDisambiguation\n";
+  foreach my $x (ReturnSenses->returnPOSSenses($tWord,$targetPartOfSpeech)) {
+    $subValueHash{$x} = 0;
+    foreach my $y (split / /,$p->get_readable($cont)) {
+      my ($contWord,$contWordPOS) = split /\//, $y;
+      foreach my $z (ReturnSenses->returnPOSSenses($contWord,(substr $contWordPOS,0,1))) {
+        if ($z eq 0) {print "skipping\n"; last;}
+        print "$multiplier $x--------$z\n";
+        $subValueHash{$x} += (($measure->getRelatedness($x,$z))*$multiplier);
+        print $subValueHash{$x},"\n";
+      }
+    }
+  }
+  return %subValueHash;
+}
+
+sub FindOneValidForm {
+  my $x = @_;
+  my @posList = qw(r n v a);
+  # my @validPos =();
+  my @temp = $wn->validForms($x);
+  my $valid = $temp[0];
+  my ($tempVal,$tag) = split /#/, $valid;
+  return $tempVal;
+}
+
+sub addPointsFromHashToHash{
+  my (%fromHash,%toHash) = @_;
+  foreach my $x (keys %fromHash) {
+    $toHash{$x} += $fromHash{$x};
+  }
+}
+
+sub SynonymSetCheck{
+  my ($targetWord, @context) = @_;
+
+  print "ACCESSING SynonymSetCheck\n";
+  my $found = 0;
+  my $scoreCode = 1;
+
+  print $targetWord,"\n";
+    #Is the word included in the title?
+    if ( grep {$_ eq $targetWord}   @context) {
+      print "Found the target word in the HeadLine\n";
+      $found = 1;
+      return $scoreCode = 2;
+      
+    }
+    #Try with validForms
+    else{
+      $found = 0;
+      print "Trying with validForms...\n";
+      my $valid = FindOneValidForm($targetWord);
+      foreach my $y (@context) {
+        if ($valid eq $y) {
+          print "Found it with validForms!!    ---$valid---   \n";
+          $found = 1;
+          return $scoreCode =1.5;
+        }
+      }
+      if($found == 0){
+        print "Did not find it with validForms. Checking with synonym sets!\n";
+        my @synsets = ReturnSenses->returnSenses($targetWord);
+        print "@synsets\n";
+        foreach my $x (@synsets) {
+                # print join("--", $wn->querySense($x,"syns")),"\n";
+                foreach my $y ($wn->querySense($x,"syns")) {
+                 my $form =  (split /#/,$y)[0];
+                 print $form,"######__###\n";
+                 $form=~ tr/_/ /;
+                 foreach my $z (@context) {
+                       # print "$form    $z\n";
+                       if ($form eq $z) {
+                         print "Found it with Synonym Sets:D:D:D:D:D:D:D:D       $form    $z\n";
+                         $found = 1;
+                         return $scoreCode = 1.25;
+                       }
+                     }    
+                   }
+                 }
+                 if($found == 0){
+                  $scoreCode = 1;
+                  print "Did Not find the TargetWord in the Context \n";
+                  print join(" ",@context),"---", $targetWord,"\n";
+                }
+              }
+            }
+            return $scoreCode;
+          }

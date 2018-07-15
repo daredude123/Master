@@ -1,0 +1,208 @@
+﻿---------------------------
+break --- The glass broke in a thousand pieces i hate it when things break 
+---------------------------
+wupMeasure
+break#n#7 : a time interval during which there is a temporary cessation of something  
+vectorMeasure
+break#v#39 : destroy the completeness of a set of related items; "The book dealer would not break the set"  
+vector_pairsMeasure
+break#n#5 : a pause from doing something (as work); "we took a 10-minute break"; "he took time out to recuperate"  
+resMeasure
+break#n#3 : (geology) a crack in the earth's crust resulting from the displacement of one side with respect to the other; "they built it right over a geological fault"; "he studied the faulting of the earth's crust"  
+randomMeasure
+break#v#27 : come forth or begin from a state of latency; "The first winter storm broke over New York"  
+pathMeasure
+break#n#7 : a time interval during which there is a temporary cessation of something  
+linMeasure
+break#n#3 : (geology) a crack in the earth's crust resulting from the displacement of one side with respect to the other; "they built it right over a geological fault"; "he studied the faulting of the earth's crust"  
+leskMeasure
+break#n#7 : a time interval during which there is a temporary cessation of something  
+lchMeasure
+break#n#7 : a time interval during which there is a temporary cessation of something  
+jcnMeasure
+break#n#3 : (geology) a crack in the earth's crust resulting from the displacement of one side with respect to the other; "they built it right over a geological fault"; "he studied the faulting of the earth's crust"  
+hsoMeasure
+break#v#41 : separate from a clinch, in boxing; "The referee broke the boxers"  
+---------------------------
+---------------------------
+cat --- It was used on slave trade ships to punish the prisoners by whipping them with the cat 
+---------------------------
+wupMeasure
+cat#n#5 : a whip with nine knotted cords; "British sailors feared the cat"  
+vectorMeasure
+cat#n#7 : any of several large cats typically able to roar and living in the wild  
+vector_pairsMeasure
+cat#n#7 : any of several large cats typically able to roar and living in the wild  
+resMeasure
+cat#n#5 : a whip with nine knotted cords; "British sailors feared the cat"  
+randomMeasure
+cat#n#8 : a method of examining body organs by scanning them with X rays and using a computer to construct a series of cross-sectional scans along a single axis  
+pathMeasure
+cat#n#5 : a whip with nine knotted cords; "British sailors feared the cat"  
+linMeasure
+cat#n#1 : feline mammal usually having thick soft fur and no ability to roar: domestic cats; wildcats  
+leskMeasure
+cat#n#7 : any of several large cats typicallWUOy able to roar and living in the wild  
+lchMeasure
+cat#n#5 : a whip with nine knotted cords; "British sailors feared the cat"  
+jcnMeasure
+cat#n#2 : an informal term for a youth or man; "a nice guy"; "the guy's only doing it for some doll"  
+hsoMeasure
+cat#n#1 : feline mammal usually having thick soft fur and no ability to roar: domestic cats; wildcats  
+---------------------------
+---------------------------
+charge --- The bank charged him for not paying his bills on time, he lacked the funds to do so 
+---------------------------
+wupMeasure
+charge#n#1 : (criminal law) a pleading describing some wrong or offense; "he was arrested on a charge of larceny"  
+vectorMeasure
+charge#v#23 : cause formation of a net electrical charge in or on; "charge a conductor"  
+vector_pairsMeasure
+charge#v#16 : provide with munition; "He loaded his gun carefully"  
+resMeasure
+charge#n#1 : (criminal law) a pleading describing some wrong or offense; "he was arrested on a charge of larceny"  
+randomMeasure
+charge#n#2 : the price charged for some article or service; "the admission charge"  
+pathMeasure
+charge#n#1 : (criminal law) a pleading describing some wrong or offense; "he was arrested on a charge of larceny"  
+linMeasure
+charge#n#1 : (criminal law) a pleading describing some wrong or offense; "he was arrested on a charge of larceny"  
+leskMeasure
+charge#n#2 : the price charged for some article or service; "the admission charge"  
+lchMeasure
+charge#n#1 : (criminal law) a pleading describing some wrong or offense; "he was arrested on a charge of larceny"  
+jcnMeasure
+charge#n#1 : (criminal law) a pleading describing some wrong or offense; "he was arrested on a charge of larceny"  
+hsoMeasure
+charge#v#21 : attribute responsibility to; "We blamed the accident on her"; "The tragedy was charged to her inexperience"  
+---------------------------
+---------------------------
+dog --- That person sure has an ugly face, a real dog 
+---------------------------
+wupMeasure
+dog#n#7 : metal supports for logs in a fireplace; "the andirons were too hot to touch"  
+vectorMeasure
+dog#n#1 : a member of the genus Canis (probably descended from the common wolf) that has been domesticated by man since prehistoric times; occurs in many breeds; "the dog barked all night"  
+vector_pairsMeasure
+dog#n#1 : a member of the genus Canis (probably descended from the common wolf) that has been domesticated by man since prehistoric times; occurs in many breeds; "the dog barked all night"  
+resMeasure
+dog#n#6 : a hinged catch that fits into a notch of a ratchet to move a wheel forward or prevent it from moving backward  
+randomMeasure
+dog#n#2 : a dull unattractive unpleasant girl or woman; "she got a reputation as a frump"; "she's a real dog"  
+pathMeasure
+dog#n#7 : metal supports for logs in a fireplace; "the andirons were too hot to touch"  
+linMeasure
+dog#n#1 : a member of the genus Canis (probably descended from the common wolf) that has been domesticated by man since prehistoric times; occurs in many breeds; "the dog barked all night"  
+leskMeasure
+dog#n#1 : a member of the genus Canis (probably descended from the common wolf) that has been domesticated by man since prehistoric times; occurs in many breeds; "the dog barked all night"  
+lchMeasure
+dog#n#7 : metal supports for logs in a fireplace; "the andirons were too hot to touch"  
+jcnMeasure
+dog#n#1 : a member of the genus Canis (probably descended from the common wolf) that has been domesticated by man since prehistoric times; occurs in many breeds; "the dog barked all night"  
+hsoMeasure
+dog#n#1 : a member of the genus Canis (probably descended from the common wolf) that has been domesticated by man since prehistoric times; occurs in many breeds; "the dog barked all night"  
+---------------------------
+---------------------------
+face --- Look for the dice and tell me what face it shows 
+---------------------------
+wupMeasure
+face#n#4 : the striking or working surface of an implement  
+vectorMeasure
+face#n#6 : a surface forming part of the outside of an object; "he examined all sides of the crystal"; "dew dripped from the face of the leaf"  
+vector_pairsMeasure
+face#v#1 : deal with (something unpleasant) head on; "You must confront your problems"; "He faced the terrible consequences of his mistakes"  
+resMeasure
+face#n#9 : a contorted facial expression; "she made a grimace at the prospect"  
+randomMeasure
+face#n#1 : the front of the human head from the forehead to the chin and ear to ear; "he washed his face"; "I wish I had seen the look on his face when he got the news"  
+pathMeasure
+face#n#4 : the striking or working surface of an implement  
+linMeasure
+face#n#10 : a specific size and style of type within a type family  
+leskMeasure
+face#n#1 : the front of the human head from the forehead to the chin and ear to ear; "he washed his face"; "I wish I had seen the look on his face when he got the news"  
+lchMeasure
+face#n#4 : the striking or working surface of an implement  
+jcnMeasure
+face#n#6 : a surface forming part of the outside of an object; "he examined all sides of the crystal"; "dew dripped from the face of the leaf"  
+hsoMeasure
+face#n#4 : the striking or working surface of an implement  
+---------------------------
+---------------------------
+light --- he shead som light on the situation at hand, it was hard to understand 
+---------------------------
+wupMeasure
+light#n#15 : a device for lighting or igniting fuel or charges or fires; "do you have a light?"  
+vectorMeasure
+light#n#1 : (physics) electromagnetic radiation that can produce a visual sensation; "the light was filtered through a soft glass window"  
+vector_pairsMeasure
+light#a#15 : weak and likely to lose consciousness; "suddenly felt faint from the pain"; "was sick and faint from hunger"; "felt light in the head"; "a swooning fit"; "light-headed with wine"; "light-headed from lack of sleep"  
+resMeasure
+light#n#15 : a device for lighting or igniting fuel or charges or fires; "do you have a light?"  
+randomMeasure
+light#n#2 : any device serving as a source of illumination; "he stopped the car and turned off the lights"  
+pathMeasure
+light#n#14 : a visual warning signal; "they saw the light of the beacon"; "there was a light at every corner"  
+linMeasure
+light#n#14 : a visual warning signal; "they saw the light of the beacon"; "there was a light at every corner"  
+leskMeasure
+light#n#2 : any device serving as a source of illumination; "he stopped the car and turned off the lights"  
+lchMeasure
+light#n#14 : a visual warning signal; "they saw the light of the beacon"; "there was a light at every corner"  
+jcnMeasure
+light#n#1 : (physics) electromagnetic radiation that can produce a visual sensation; "the light was filtered through a soft glass window"  
+hsoMeasure
+light#n#14 : a visual warning signal; "they saw the light of the beacon"; "there was a light at every corner"  
+---------------------------
+---------------------------
+stab --- He took bullet and stab wounds to the head, face, side, and arm, returning fire the whole time. 
+---------------------------
+wupMeasure
+stab#n#1 : a sudden sharp feeling; "pangs of regret"; "she felt a stab of excitement"; "twinges of conscience"  
+vectorMeasure
+stab#n#1 : a sudden sharp feeling; "pangs of regret"; "she felt a stab of excitement"; "twinges of conscience"  
+vector_pairsMeasure
+stab#n#1 : a sudden sharp feeling; "pangs of regret"; "she felt a stab of excitement"; "twinges of conscience"  
+resMeasure
+stab#n#3 : informal words for any attempt or effort; "he gave it his best shot"; "he took a stab at forecasting"  
+randomMeasure
+stab#v#3 : poke or thrust abruptly; "he jabbed his finger into her ribs"  
+pathMeasure
+stab#n#1 : a sudden sharp feeling; "pangs of regret"; "she felt a stab of excitement"; "twinges of conscience"  
+linMeasure
+stab#n#3 : informal words for any attempt or effort; "he gave it his best shot"; "he took a stab at forecasting"  
+leskMeasure
+stab#n#2 : a strong blow with a knife or other sharp pointed instrument; "one strong stab to the heart killed him"  
+lchMeasure
+stab#n#1 : a sudden sharp feeling; "pangs of regret"; "she felt a stab of excitement"; "twinges of conscience"  
+jcnMeasure
+stab#n#3 : informal words for any attempt or effort; "he gave it his best shot"; "he took a stab at forecasting"  
+hsoMeasure
+stab#n#1 : a sudden sharp feeling; "pangs of regret"; "she felt a stab of excitement"; "twinges of conscience"  
+---------------------------
+---------------------------
+tank --- WW1 tactics and theoreticians soon announced that at least three tank types would be necessary to make a difference in no-man’s land (which was still the only imagined battleground for most staffs). 
+---------------------------
+wupMeasure
+tank#n#2 : a large (usually metallic) vessel for holding gases or liquids  
+vectorMeasure
+tank#n#2 : a large (usually metallic) vessel for holding gases or liquids  
+vector_pairsMeasure
+tank#n#2 : a large (usually metallic) vessel for holding gases or liquids  
+resMeasure
+tank#n#1 : an enclresosed armored military vehicle; has a cannon and moves on caterpillar treads  
+randomMeasure
+tank#v#2 : treat in a tank; "tank animal refuse"  
+pathMeasure
+tank#n#2 : a large (usually metallic) vessel for holding gases or liquids  
+linMeasure
+tank#n#1 : an enclosed armored military vehicle; has a cannon and moves on caterpillar treads  
+leskMeasure
+tank#n#2 : a large (usually metallic) vessel for holding gases or liquids  
+lchMeasure
+tank#n#3 : as much as a tank will hold  
+jcnMeasure
+tank#n#1 : an enclosed armored military vehicle; has a cannon and moves on caterpillar treads  
+hsoMeasure
+tank#n#1 : an enclosed armored military vehicle; has a cannon and moves on caterpillar treads  
+---------------------------

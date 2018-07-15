@@ -1,0 +1,30 @@
+from builtins import print
+from nltk.corpus import wordnet
+from nltk.tag import pos_tag
+from bs4 import BeautifulSoup as bs
+import urllib3
+
+
+
+def fetchHtmlElements(url):
+    http = urllib3.PoolManager()
+    r = http.request('GET', url)
+    string = r.data
+    soup = bs(string,'html.parser')
+
+    headLines = soup.find_all("h1")
+    print(headLines)
+
+    para = soup.find_all("p")
+    print(para,"\n")
+    for h in para:
+        print(h.text,"\n")
+
+def disambiguateWebsite(headLine,webcontent):
+    score = {}
+    for x in websiteContent:
+        for y in wordnet.synsets(x):
+
+
+
+fetchHtmlElements("https://en.wikipedia.org/wiki/Cobra")

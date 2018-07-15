@@ -1,0 +1,29 @@
+[
+  {
+    "id": "bbf38fe1-ff0a-4de7-8a86-ea9221234506",
+    "userEmail": "testEmail",
+    "sense": {
+      "word": "(a, an, the ..) battlefield, battleground, field_of_battle, field_of_honor, field ",
+      "explanation": "a region where a battle is being (or has been) fought; \"they made a tour of Civil War battlefields\"  ",
+      "related": "",
+      "source": "WordNet",
+      "rank": 5,
+      "senseid": "http://www.w3.org/2006/03/wn/wn20/instances/synset-battlefield-noun-1",
+      "$$hashKey": "object:3"
+    },
+    "wordThatWasTagged": "battlefield ",
+    "iframeIndex": 0,
+    "context": "Though it's often considered the first modern war, World War I went down while most of humanity still took the word \"horsepower\" literally. A WWI battlefield was an odd and terrifying blend of the old and the new. Take Germany, for example, which had a reputation of being fairly high-tech at the time: Their army launched into the earliest battles of the war led by Uhlans -- horse-mounted shock troops armed with ",
+    "serializedSelectionRange": "0/7/9/1/1/1/7/10/2:146,0/7/9/1/1/1/7/10/2:158",
+    "urlOfPageThatWasTagged": "http://www.cracked.com/article_23616_weaponized-avalanches-5-insane-details-from-wwi.html",
+    "deserializedRange": {
+      "nativeRange": {},
+      "commonAncestorContainer": {},
+      "collapsed": false,
+      "endOffset": 2,
+      "endContainer": {},
+      "startOffset": 1,
+      "startContainer": {}
+    }
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "682eaad9-be40-45c2-8f6c-e94823c75d5b",
+    "userEmail": "testEmail",
+    "sense": {
+      "word": "(a, an, the ..) article ",
+      "explanation": "nonfictional prose forming an independent part of a publication  ",
+      "related": "",
+      "source": "WordNet",
+      "rank": 14,
+      "senseid": "http://www.w3.org/2006/03/wn/wn20/instances/synset-article-noun-1",
+      "$$hashKey": "object:3"
+    },
+    "wordThatWasTagged": "dog",
+    "iframeIndex": 0,
+    "context": "This article is about the domestic dog.  For related species known as \"dogs\", see ",
+    "serializedSelectionRange": "0/0/7/9/5/2:5,0/0/7/9/5/2:13",
+    "urlOfPageThatWasTagged": "https://en.wikipedia.org/wiki/Dog",
+    "deserializedRange": {
+      "nativeRange": {},
+      "commonAncestorContainer": {},
+      "collapsed": false,
+      "endOffset": 2,
+      "endContainer": {},
+      "startOffset": 1,
+      "startContainer": {}
+    }
+  }
+]
